@@ -1,0 +1,12 @@
+{
+  "name": "myschool",
+  "version": "1.0.0",
+  "description": "MySchool WordPress Theme",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^30.14.1"
+  }
+}

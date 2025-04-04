@@ -1,0 +1,32 @@
+<!-- wp:template-part {"slug":"header","theme":"myschool","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"site-main"} -->
+<main class="wp-block-group site-main">
+    <!-- wp:query {"queryId":1,"query":{"perPage":12,"postType":"staff","order":"asc","orderBy":"title"},"displayLayout":{"type":"flex","columns":3},"className":"staff-grid"} -->
+    <div class="wp-block-query staff-grid">
+        <!-- wp:post-template -->
+            <!-- wp:group {"className":"staff-member-card"} -->
+            <div class="wp-block-group staff-member-card">
+                <!-- wp:post-terms {"term":"department","className":"staff-department-label"} /-->
+                <!-- wp:post-featured-image {"className":"staff-member-image"} /-->
+                <!-- wp:group {"className":"staff-member-content"} -->
+                <div class="wp-block-group staff-member-content">
+                    <!-- wp:post-title {"level":3,"className":"staff-member-name","isLink":true} /-->
+                    <!-- wp:post-content /-->
+                </div>
+                <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+        <!-- /wp:post-template -->
+
+        <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+            <!-- wp:query-pagination-previous /-->
+            <!-- wp:query-pagination-numbers /-->
+            <!-- wp:query-pagination-next /-->
+        <!-- /wp:query-pagination -->
+    </div>
+    <!-- /wp:query -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"myschool","tagName":"footer"} /--> 

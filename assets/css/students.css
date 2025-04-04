@@ -1,0 +1,110 @@
+/* 学生归档页面样式 */
+.student-archive-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.student-member-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.student-member-card:hover {
+    transform: translateY(-5px);
+}
+
+.student-member-image {
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+}
+
+.student-member-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.student-member-content {
+    padding: 1.5rem;
+}
+
+.student-member-name {
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.student-member-name a {
+    color: #333;
+    text-decoration: none;
+}
+
+.student-member-name a:hover {
+    color: #0073aa;
+}
+
+/* 单个学生页面样式 */
+.student-single-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.student-member-single {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.student-member-header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+@media (min-width: 768px) {
+    .student-member-header {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.student-member-info {
+    flex: 1;
+}
+
+.student-member-name {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.student-member-content {
+    padding: 2rem;
+}
+
+.student-member-content p {
+    margin: 0 0 1.5rem;
+    line-height: 1.6;
+}
+
+.student-member-content p:last-child {
+    margin-bottom: 0;
+} 

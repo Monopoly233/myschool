@@ -1,0 +1,146 @@
+/* 员工归档页面样式 */
+.staff-archive-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.staff-member-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.staff-member-card:hover {
+    transform: translateY(-5px);
+}
+
+.staff-department-label {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(0, 115, 170, 0.9);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    z-index: 1;
+}
+
+.staff-member-image {
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+}
+
+.staff-member-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.staff-member-content {
+    padding: 1.5rem;
+}
+
+.staff-member-name {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.staff-member-name a {
+    color: #333;
+    text-decoration: none;
+}
+
+.staff-member-name a:hover {
+    color: #0073aa;
+}
+
+.staff-job-title {
+    color: #666;
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+}
+
+.staff-email {
+    color: #0073aa;
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+/* 单个员工页面样式 */
+.staff-single-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.staff-member-single {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.staff-member-header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+@media (min-width: 768px) {
+    .staff-member-header {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.staff-member-info {
+    flex: 1;
+}
+
+.staff-member-name {
+    margin: 0 0 0.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.staff-job-title {
+    color: #666;
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+}
+
+.staff-email {
+    color: #0073aa;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.staff-member-content {
+    padding: 2rem;
+}
+
+.staff-member-content p {
+    margin: 0 0 1.5rem;
+    line-height: 1.6;
+}
+
+.staff-member-content p:last-child {
+    margin-bottom: 0;
+} 

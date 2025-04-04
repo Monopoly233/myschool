@@ -1,0 +1,302 @@
+/*
+Theme Name: MySchool
+Theme URI: http://localhost/school
+Author: Your Name
+Author URI: http://localhost/school
+Description: A custom theme for school website
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: myschool
+*/
+
+/* 覆盖 WordPress 自动添加的类名样式 */
+.wp-block-query.is-layout-flow,
+.wp-block-query-is-layout-flow,
+.wp-block-post-template.is-layout-flow,
+.wp-block-post-template-is-layout-flow,
+.wp-block-group.is-layout-flow,
+.wp-block-group-is-layout-flow {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Staff Archive Page */
+.staff-archive-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.staff-archive-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.staff-archive-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.staff-archive-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--wp--preset--color--base);
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+.staff-member-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.staff-member-card:hover {
+    transform: translateY(-5px);
+}
+
+.staff-department-label {
+    background: var(--wp--preset--color--secondary);
+    color: var(--wp--preset--color--base);
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.staff-member-image {
+    width: 100%;
+    aspect-ratio: 3/2;
+}
+
+.staff-member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.staff-member-content {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.staff-member-name {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    color: var(--wp--preset--color--primary);
+}
+
+.staff-job-title {
+    color: var(--wp--preset--color--secondary);
+    margin-bottom: 0.5rem;
+}
+
+.staff-email {
+    color: var(--wp--preset--color--primary);
+}
+
+/* Student Archive */
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+.student-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.student-card:hover {
+    transform: translateY(-5px);
+}
+
+.student-image {
+    width: 100%;
+    aspect-ratio: 3/2;
+}
+
+.student-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.student-content {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.student-name {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    color: var(--wp--preset--color--primary);
+}
+
+.student-excerpt {
+    color: var(--wp--preset--color--base);
+    line-height: 1.6;
+}
+
+/* Single Student */
+.student-single-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.student-featured-image {
+    margin-bottom: 2rem;
+}
+
+.student-featured-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.student-content {
+    margin-bottom: 2rem;
+}
+
+.student-title {
+    margin-bottom: 1.5rem;
+}
+
+.student-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--wp--preset--color--background);
+}
+
+.nav-previous,
+.nav-next {
+    padding: 0.5rem 1rem;
+    background: var(--wp--preset--color--secondary);
+    color: var(--wp--preset--color--base);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-previous:hover,
+.nav-next:hover {
+    background: var(--wp--preset--color--accent);
+}
+
+/* Staff Page */
+.staff-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.staff-page-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.staff-page-content {
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+/* Query Pagination */
+.wp-block-query-pagination {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--wp--preset--color--background);
+}
+
+.wp-block-query-pagination-numbers {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.wp-block-query-pagination-numbers .page-numbers {
+    padding: 0.5rem 1rem;
+    background: var(--wp--preset--color--secondary);
+    color: var(--wp--preset--color--base);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.wp-block-query-pagination-numbers .page-numbers:hover,
+.wp-block-query-pagination-numbers .page-numbers.current {
+    background: var(--wp--preset--color--accent);
+}
+
+.wp-block-query-pagination-previous,
+.wp-block-query-pagination-next {
+    padding: 0.5rem 1rem;
+    background: var(--wp--preset--color--secondary);
+    color: var(--wp--preset--color--base);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.wp-block-query-pagination-previous:hover,
+.wp-block-query-pagination-next:hover {
+    background: var(--wp--preset--color--accent);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .staff-grid,
+    .student-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .staff-archive-title,
+    .student-title {
+        font-size: 2rem;
+    }
+
+    .staff-member-name,
+    .student-name {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .staff-grid,
+    .student-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .staff-archive-container,
+    .student-single-container,
+    .staff-page-container {
+        padding: 1rem;
+    }
+}
+
